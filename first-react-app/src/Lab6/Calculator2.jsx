@@ -5,6 +5,7 @@ function Calculator2() {
   const [secondNumber, setSecondNumber] = useState("");
   const [result, setResult] = useState("");
 
+  // don't need this method as using the individual buttons
   const handleSubmit = (e) => {
     e.preventDefault();
   };

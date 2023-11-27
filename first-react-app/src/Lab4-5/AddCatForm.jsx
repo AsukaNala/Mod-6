@@ -10,7 +10,12 @@ function AddCatForm({ onAddCat }) {
   //submit handler.
   const handleSubmit = (e) => {
     e.preventDefault(); //to prevent reload when form is submitted
-    onAddCat({ name: newName, latinName: newLatinName, img: newImg }); //excute onAddCats.(call back function. when  form is submitted it's recieved newName and NewLatinName) //Now it works!
+    // const catToAdd = {}; // { name: newName, latinName: newLatinName, img: newImg };
+    // catToAdd.name = newName;
+    // catToAdd.newLatinName = newLatinName;
+    // catToAdd.img = newImg;
+    //onAddCat(catToAdd); //excute onAddCats.(call back function. when  form is submitted it's recieved newName and NewLatinName) //Now it works!
+    onAddCat({ name: newName, latinName: newLatinName, img: newImg });
   };
 
   return (
